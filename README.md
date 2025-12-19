@@ -84,85 +84,73 @@ Image-Caption-Generator-Deep-Learning/
 │   └── Project_Presentation.pdf
 │
 └── README.md
-text```
+Folder Description
+notebooks/ – Complete implementation and experimentation code
 
--notebooks/: Contains the complete implementation and experimentation code.
--models/: Contains trained model files and tokenizer details.
--documentation/: Project explanatory documents such as presentation and report.
+models/ – Trained model files and tokenizer details
 
+documentation/ – Project explanatory documents such as presentation and report
 
+presentation/ – Final project presentation
 
-## 7. Installation and Setup
-
-Step 1: Clone the repository:
-
-```text
+7. Installation and Setup
+Step 1: Clone the repository
+bash
+Copy code
 git clone https://github.com/Rakshada1811/Image-Caption-Generator-Deep-Learning.git
 cd Image-Caption-Generator-Deep-Learning
-text```
-
-
-Step 2: Install required dependencies:
-
-```text
+Step 2: Install required dependencies
+bash
+Copy code
 pip install tensorflow keras numpy matplotlib pillow nltk
-text```
-
-
-
-## 8. Model Files
-
+8. Model Files
 Due to GitHub file size limitations, trained model files are not fully stored in the repository.
 
 Instructions to download and place the required model files are provided in:
 
-```text
- models/README.md
-text```
+text
+Copy code
+models/README.md
 All downloaded model files must be placed inside the models/ directory before running the notebook.
 
+9. How to Run the Project
+Open the Jupyter Notebook:
 
-## 9. How to Run the Project
-
-  **1. Open the Jupyter Notebook:**
-
+bash
+Copy code
 jupyter notebook notebooks/image_caption_generator.ipynb
+Ensure all required model files are present in the models/ folder
 
-  **2. Ensure all required model files are present in the models/ folder.**
+Run the notebook cells in sequence
 
-  **3. Run the notebook cells in sequence.**
+Provide an image path as input to generate captions
 
-  **4. Provide an image path as input to generate captions.**
+10. Results and Observations
+The model generates relevant and context-aware captions
 
+Captions improve with better image clarity and object representation
 
+Demonstrates effective integration of CNN and LSTM architectures
 
-## 10. Results and Observations
+11. Applications
+Assistive technologies for visually impaired users
 
-- The model generates relevant and context-aware captions
-- Captions improve with better image clarity and object representation
-- Demonstrates effective integration of CNN and LSTM architectures
+Image indexing and retrieval systems
 
+Automated content generation
 
-## 11. Applications
+Human-computer interaction systems
 
-- Assistive technologies for visually impaired users
-- Image indexing and retrieval systems
-- Automated content generation
-- Human-computer interaction systems
-
-## 12. Author
-
-**Rakshada Renapurkar**
-Electronics and Telecomms Graduate
+12. Authors
+Rakshada Renapurkar
+Electronics and Telecommunication Graduate
 Specialization: Artificial Intelligence and Machine Learning
 
-**Subham Maharana**
-**Anurag Ojha**
-**K Sai Kiran**
-**Kota Aravind Kumar Reddy**
-**Nazim Nazir** 
+Subham Maharana
+Anurag Ojha
+K Sai Kiran
+Kota Aravind Kumar Reddy
+Nazim Nazir
 
-
-## 13. License
-
+13. License
 This project is intended for academic and educational purposes.
