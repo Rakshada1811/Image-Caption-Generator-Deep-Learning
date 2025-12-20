@@ -84,73 +84,90 @@ Image-Caption-Generator-Deep-Learning/
 │   └── Project_Presentation.pdf
 │
 └── README.md
-Folder Description
-notebooks/ – Complete implementation and experimentation code
 
-models/ – Trained model files and tokenizer details
+```
+### Folder Description
 
-documentation/ – Project explanatory documents such as presentation and report
+- `notebooks/` – Contains the complete Jupyter Notebook used for data preprocessing, model development, training, and testing  
+- `models/` – Stores the trained model weights and tokenizer generated after training  
+- `documentation/` – Includes supporting documentation explaining the project design and workflow  
+- `presentation/` – Contains the final project presentation used for evaluation  
 
-presentation/ – Final project presentation
+---
 
-7. Installation and Setup
-Step 1: Clone the repository
-bash
-Copy code
-git clone https://github.com/Rakshada1811/Image-Caption-Generator-Deep-Learning.git
-cd Image-Caption-Generator-Deep-Learning
-Step 2: Install required dependencies
-bash
-Copy code
-pip install tensorflow keras numpy matplotlib pillow nltk
-8. Model Files
-Due to GitHub file size limitations, trained model files are not fully stored in the repository.
+## 7. Project Methodology
 
-Instructions to download and place the required model files are provided in:
+The project was developed using a structured deep learning workflow that integrates computer vision and natural language processing. The overall methodology followed is outlined below.
 
-text
-Copy code
-models/README.md
-All downloaded model files must be placed inside the models/ directory before running the notebook.
+---
 
-9. How to Run the Project
-Open the Jupyter Notebook:
+## 8. Data Preparation
 
-bash
-Copy code
-jupyter notebook notebooks/image_caption_generator.ipynb
-Ensure all required model files are present in the models/ folder
+- The MS COCO dataset was used as the primary data source  
+- Images were resized and normalized to match the input requirements of the CNN  
+- Captions were cleaned by removing punctuation and converting text to lowercase  
+- Special start and end tokens were added to each caption  
+- Tokenization and padding were applied to convert text into numerical sequences  
 
-Run the notebook cells in sequence
+---
 
-Provide an image path as input to generate captions
+## 9. Feature Extraction
 
-10. Results and Observations
-The model generates relevant and context-aware captions
+- A pre-trained InceptionV3 model was used for extracting visual features  
+- The final classification layer was removed  
+- Image embeddings were generated and stored for efficient training  
+- This step helped reduce computational cost during caption generation  
 
-Captions improve with better image clarity and object representation
+---
 
-Demonstrates effective integration of CNN and LSTM architectures
+## 10. Caption Generation Model
 
-11. Applications
-Assistive technologies for visually impaired users
+- An LSTM-based neural network was used to model the sequential nature of language  
+- Image features were combined with embedded caption sequences  
+- The model was trained to predict the next word given the image context and previous words  
+- Categorical cross-entropy loss and Adam optimizer were used during training  
 
-Image indexing and retrieval systems
+---
 
-Automated content generation
+## 11. Model Training and Evaluation
 
-Human-computer interaction systems
+- The model was trained on paired image–caption data  
+- Performance was evaluated by observing the quality and coherence of generated captions  
+- Greedy decoding was used during inference to generate final captions  
 
-12. Authors
-Rakshada Renapurkar
-Electronics and Telecommunication Graduate
-Specialization: Artificial Intelligence and Machine Learning
+---
 
-Subham Maharana
-Anurag Ojha
-K Sai Kiran
-Kota Aravind Kumar Reddy
-Nazim Nazir
+## 12. Results and Observations
 
-13. License
+- The model successfully generates meaningful captions for unseen images  
+- Captions reflect object presence and contextual relationships  
+- Performance improves with clearer images and well-represented objects  
+
+---
+
+## 13. Applications
+
+- Image description systems for visually impaired users  
+- Automated image tagging and indexing  
+- Multimedia content analysis  
+- Intelligent human–computer interaction systems  
+
+---
+
+## 14. Authors
+
+Rakshada Renapurkar  
+Electronics and Telecommunication Graduate  
+Specialization: Artificial Intelligence and Machine Learning  
+
+Subham Maharana  
+Anurag Ojha  
+K Sai Kiran  
+Kota Aravind Kumar Reddy  
+Nazim Nazir  
+
+---
+
+## 15. License
+
 This project is intended for academic and educational purposes.
